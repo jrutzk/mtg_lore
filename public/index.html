@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTG Lore Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Magic: The Gathering Lore Finder</h1>
+            <p>Discover the stories behind your favorite Planeswalkers and characters</p>
+        </header>
+
+        <div class="search-section">
+            <input 
+                type="text" 
+                id="characterInput" 
+                placeholder="Enter character name (e.g., Jace Beleren, Liliana Vess)" 
+                autocomplete="off"
+            >
+            <button id="getLoreBtn">Get Lore</button>
+        </div>
+
+        <!-- Loading indicator -->
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Searching the multiverse...</p>
+        </div>
+
+        <!-- Error message -->
+        <div id="error" class="error hidden"></div>
+
+        <!-- Results area -->
+        <div id="results" class="results hidden">
+            <h2 id="characterName"></h2>
+            
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Home Plane</h3>
+                    <p id="plane"></p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Affiliations</h3>
+                    <ul id="affiliations"></ul>
+                </div>
+            </div>
+
+            <div class="info-card summary">
+                <h3>Story Summary</h3>
+                <p id="summary"></p>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-card relationship">
+                    <h3>Relationship with Nahiri</h3>
+                    <div id="nahiriRelationship" class="relationship-badge"></div>
+                </div>
+
+                <div class="info-card relationship">
+                    <h3>Relationship with Aurelia</h3>
+                    <div id="aureliaRelationship" class="relationship-badge"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
