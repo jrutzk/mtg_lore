@@ -172,7 +172,6 @@ header p {
 }
 
 #affiliations li:before {
-    content: "⚡";
     position: absolute;
     left: 0;
 }

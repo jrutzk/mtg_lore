@@ -30,19 +30,21 @@ Rules:
 - No commentary.
 - Output valid JSON only.
 - Relationship fields must contain exactly one of the allowed values: attack_on_sight, enemies, neutral, friends, or loved_ones.
-- Use snake_case for relationship enum values.`;
+- Use snake_case for relationship enum values.
+- Avoid using emojis or special characters in the response.`;
 
     // Construct the user message with the character name
     const userMessage = `Provide the lore for the Magic: The Gathering character: ${characterName}`;
 
     // Make the API call to OpenAI
     const completion = await openai.chat.completions.create({
-      model: 'gpt-4o-mini', // Using gpt-4o-mini for cost efficiency
+      model: 'gpt-4o-mini',
+      //service_tier: "flex",
       messages: [
         { role: 'system', content: systemMessage },
         { role: 'user', content: userMessage }
       ],
-      temperature: 0.7,
+      temperature: 0.3,
       response_format: { type: 'json_object' } // Ensures JSON response
     });
 
