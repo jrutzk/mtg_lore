@@ -225,6 +225,7 @@ header p {
     }
 
     .info-grid {
+        margin-top: 12px;
         grid-template-columns: 1fr;
     }
 }
