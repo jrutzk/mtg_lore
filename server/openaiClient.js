@@ -20,8 +20,8 @@ async function getCharacterLore(characterName) {
   "plane": "string",
   "affiliations": ["strings"],
   "summary": "2-3 sentence summary of their lore and story arc",
-  "nahiri_relationship": "attack_on_sight | enemies | neutral | friends | loved_ones",
-  "aurelia_relationship": "attack_on_sight | enemies | neutral | friends | loved_ones"
+  "nahiri_relationship": "attack_on_sight | enemies | ideologically_opposed | neutral | no_relationship | friends | loved_ones",
+  "aurelia_relationship": "attack_on_sight | enemies | ideologically_opposed | neutral | no_relationship | friends | loved_ones"
 }
 
 Rules:

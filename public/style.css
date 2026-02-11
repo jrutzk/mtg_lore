@@ -146,6 +146,7 @@ header p {
 .info-card.summary {
     background: #fef3c7;
     border-color: #fbbf24;
+    margin-bottom: 20px;
 }
 
 .info-card h3 {
