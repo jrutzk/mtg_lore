@@ -2,7 +2,7 @@
 
 A simple full-stack web application that fetches Magic: The Gathering character lore using the OpenAI API. Users can enter a character name and receive structured information about their story, affiliations, and relationships.
 
-## 🎯 Features
+##  Features
 
 - Clean, responsive UI built with vanilla HTML/CSS/JS
 - Express.js backend with OpenAI integration
@@ -11,14 +11,14 @@ A simple full-stack web application that fetches Magic: The Gathering character 
 - Error handling and loading states
 - Ready for deployment on Render
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Backend**: Node.js, Express.js
 - **Frontend**: Vanilla HTML, CSS, JavaScript
 - **AI**: OpenAI API (Node SDK)
 - **Deployment**: Render-ready
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 mtg-lore/
@@ -35,7 +35,7 @@ mtg-lore/
 └── README.md
 ```
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -73,7 +73,7 @@ mtg-lore/
    
    Navigate to `http://localhost:3000`
 
-## 🌐 Deploying to Render
+##  Deploying to Render
 
 ### Method 1: Web Service Deployment
 
@@ -114,7 +114,7 @@ services:
 
 Then connect your repository and Render will auto-configure based on this file.
 
-## 🎮 Usage
+##  Usage
 
 1. Enter a Magic: The Gathering character name (e.g., "Jace Beleren", "Liliana Vess", "Chandra Nalaar")
 2. Click "Get Lore"
@@ -125,13 +125,13 @@ Then connect your repository and Render will auto-configure based on this file.
    - Story summary
    - Relationships with Nahiri and Aurelia
 
-## 🔒 Security Notes
+##  Security Notes
 
 - Never commit your `.env` file or API keys to version control
 - Use environment variables for all secrets
 - The `.gitignore` file is configured to exclude sensitive files
 
-## 📝 API Response Format
+##  API Response Format
 
 The backend returns a strict JSON format:
 
@@ -146,7 +146,7 @@ The backend returns a strict JSON format:
 }
 ```
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 **"OpenAI API key is not configured"**
 - Make sure your `.env` file exists and contains a valid `OPENAI_API_KEY`
@@ -160,7 +160,7 @@ The backend returns a strict JSON format:
 **Port already in use**
 - Change the `PORT` in your `.env` file to a different number
 
-## 💡 Customization Ideas
+##  Customization Ideas
 
 - Add more characters to track relationships with
 - Include character images using Scryfall API
@@ -168,11 +168,11 @@ The backend returns a strict JSON format:
 - Implement caching to reduce API calls
 - Add more detailed lore sections
 
-## 📄 License
+##  License
 
 This project is open source and available under the MIT License.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - Magic: The Gathering is a trademark of Wizards of the Coast
 - Built with OpenAI's GPT models
